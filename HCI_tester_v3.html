@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+      <meta charset="utf-8">
+    <title> HCI Form Click Only V2</title>
+  </head>
+  
+  <body onload="opened()"style="background-color: #C9C9DF">
+  
+	<div id="textTypes" style="background-color:#e6e6ff; padding: 5px; margin: 10px 0px">
+		<h3> Text inputs:</h3>
+		<div id="numericText" style="float:left;">
+			<b>Input the following number here</b><br>
+			345567 <br>
+			<input type="text" id="num" tabindex="-1">
+		</div>
+		
+		<div id="alphabetText" style="margin-left: 300px;">
+			<b>Input the following text here</b><br>
+			blue llama <br>
+			<input type="text" id="txt" tabindex="-1">
+		</div>
+	</div>
+
+	<div id="stringTypes" style="background-color:#e6e6ff; padding: 5px; margin: 10px 0px">
+		<h3> Text inputs:</h3>
+		<div id="str1">
+			<b>Input the following line here</b><br>
+			This is a test! <br>
+			<input type="text" id="str1Text" tabindex="-1">
+		</div>
+		
+		<div id="str2">
+			<b>Input the following text here</b><br>
+			I am a duck. <br>
+			<input type="text" id="str2Text" tabindex="-1">
+		</div>
+	</div>	
+	
+	<div id="dropdowns" style="background-color:#e6e6ff; padding: 5px; margin: 10px 0px">
+		<h3> Dropdown inputs:</h3>
+		<div id="shortList">
+			<b>Select the following item</b><br>
+			Audi <br>
+			<select tabindex="-1" id="short">
+				<option value="volvo">Volvo</option>
+				<option value="saab">Saab</option>
+				<option value="mercedes">Mercedes</option>
+				<option value="audi">Audi</option>
+			</select>
+		</div>
+		
+		<div id="longList">
+			<b>Select the following item</b><br>
+			12 <br>
+			<select tabindex="-1" id="long">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+				<option value="13">13</option>
+				<option value="14">14</option>
+				<option value="15">15</option>
+				<option value="16">16</option>
+				<option value="17">17</option>
+				<option value="18">18</option>
+				<option value="19">19</option>
+				<option value="20">20</option>
+				<option value="21">21</option>
+				<option value="22">22</option>
+				<option value="23">23</option>
+				<option value="24">24</option>
+				<option value="25">25</option>
+				<option value="26">26</option>
+				<option value="27">27</option>
+				<option value="28">28</option>
+				<option value="29">29</option>
+				<option value="30">30</option>
+			</select>
+		</div>
+	</div>
+	
+	<div id="radioTypes" style="background-color:#e6e6ff; padding: 5px; margin: 10px 0px">
+		<h3> Radio inputs:</h3>
+		<div id="horiOpts">
+			<b>Input the following selection here</b><br>
+			Mail <br>
+			<div>
+				<input type="radio" id="contactChoice1"
+				name="contact" value="email" tabindex="-1">
+				<label for="contactChoice1">Email</label>
+
+				<input type="radio" id="contactChoice2"
+				name="contact" value="phone" tabindex="-1">
+				<label for="contactChoice2">Phone</label>
+
+				<input type="radio" id="contactChoice3"
+				name="contact" value="mail" tabindex="-1">
+				<label for="contactChoice3">Mail</label>
+			</div>
+		</div>
+		
+		<div id="vertOpts" style="background-color:#e6e6ff; padding: 5px; margin: 10px 0px">
+			<b>Input the following selection here</b><br>
+			Llama <br>
+			<div>
+				<input type="radio" id="animalChoice1"
+				name="animal" value="dog" tabindex="-1">
+				<label for="contactChoice1">Dog</label><br>
+
+				<input type="radio" id="animalChoice2"
+				name="animal" value="cat" tabindex="-1">
+				<label for="contactChoice2">Cat</label><br>
+
+				<input type="radio" id="animalChoice3"
+				name="animal" value="llama" tabindex="-1">
+				<label for="contactChoice3">Llama</label>
+			</div>
+		</div>
+		
+		<div id="boxOpts" style="background-color:#e6e6ff; padding: 5px; margin: 10px 0px">
+			<b>Input the following selection here</b><br>
+			Llama <br>
+			<div>
+				<input type="radio" id="animalChoice21"
+				name="animal2" value="dog" tabindex="-1">
+				<label for="contactChoice1">Dog</label>
+
+				<input type="radio" id="animalChoice22"
+				name="animal2" value="cat" tabindex="-1">
+				<label for="contactChoice2">Cat</label><br>
+
+				<input type="radio" id="animalChoice23"
+				name="animal2" value="llama" tabindex="-1">
+				<label for="contactChoice3">Llama</label>
+				
+				<input type="radio" id="animalChoice24"
+				name="animal2" value="bird" tabindex="-1">
+				<label for="contactChoice4">Bird</label>
+			</div>
+		</div>
+	</div>
+	
+	<div id="colorTypes" style="background-color:#e6e6ff; padding: 5px; margin: 10px 0px">
+		<h3> Color inputs:</h3>
+		<div id="colorText">
+			<b>Input the following color here</b><br>
+			Burgandy <br>
+			<input type="text" id="colTxt" tabindex="-1">
+		</div>
+		
+		<div id="colorList" style="margin-top: 20px;">
+			<b>Select the following color</b><br>
+			Purple <br>
+			<select tabindex="-1" id="colDrp">
+				<option value="red">Red</option>
+				<option value="burgandy">Burgandy</option>
+				<option value="pink">Pink</option>
+				<option value="purple">Purple</option>
+			</select>
+		</div>
+	</div>
+	
+	<div id="done" style="background-color:#e6e6ff; padding: 5px; margin: 10px 0px">
+		Thanks!
+		<button type="button" onclick="thingDone()">Submit!</button>
+	</div>
+	
+	<div id="resDiv" style="background-color:#e6e6ff; padding: 5px; margin: 10px 0px">
+		
+		<p id="output"></p>
+	
+	</div>
+	
+	<script>
+		var timeStart;
+		
+		function opened(){
+			var d = new Date();
+			timeStart = d.getTime();
+		}
+		
+		function thingDone() {
+			done();
+			readText();
+			readStrings();
+			readDropdown();
+			readButtons();
+			wipe();
+		}
+		
+		function done(){
+			var d = new Date();
+			timeEnd = d.getTime();
+			
+			var timed = timeEnd - timeStart;
+			timed = timed/1000;
+			//console.log(timed)
+			
+			var output = document.getElementById('output');
+			output.innerHTML += "<b> Please copy and paste this into the survey!<b><br>"
+			output.innerHTML += "Time in seconds: " + timed + "<br>"
+		}
+		
+		function readStrings(){
+			var output = document.getElementById('output');
+
+			var s1 = document.getElementById('str1Text').value
+			var s2 = document.getElementById('str2Text').value
+			output.innerHTML += "Strings: " + s1 + ", " + s2 + "<br>"
+			//console.log(sL, ", ", lL)
+		}
+		
+		
+		function readDropdown(){
+			var output = document.getElementById('output');
+
+			var sL = document.getElementById('short').value
+			var lL = document.getElementById('long').value
+			output.innerHTML += "Dropdown: " + sL + ", " + lL + "<br>"
+			//console.log(sL, ", ", lL)
+		}
+		
+		function readText(){
+			var output = document.getElementById('output');
+			
+			var num = document.getElementById('num').value
+			var txt = document.getElementById('txt').value
+			output.innerHTML += "Text: " + num + ", " + txt + "<br>"
+			//console.log(num, ", ", txt)
+		}
+		
+		function readColor(){
+			var output = document.getElementById('output');
+			
+			var colTxt = document.getElementById('colTxt').value
+			var colDrop = document.getElementById('colDrp').value
+			output.innerHTML += "Color: " + colTxt + ", " + colDrop + "<br>"
+			//console.log(num, ", ", txt)
+		}
+		
+		function readButtons(){
+			var output = document.getElementById('output');
+			var vertList = document.getElementsByName("contact");
+			for (var i = 0, length = vertList.length; i < length; i++)
+			{
+				if (vertList[i].checked)
+				{
+					vert = vertList[i].value;
+					break;
+				}
+			}
+			var horList = document.getElementsByName("animal");
+			for (var i = 0, length = horList.length; i < length; i++)
+			{
+				if (horList[i].checked)
+				{
+					hor = horList[i].value;
+					break;
+				}
+			}
+			var boxList = document.getElementsByName("animal2");
+			for (var i = 0, length = boxList.length; i < length; i++)
+			{
+				if (boxList[i].checked)
+				{
+					box = boxList[i].value;
+					break;
+				}
+			}
+			output.innerHTML += "Buttons: " + vert + ", " + hor + ", " + box + "<br>";
+			//console.log(vert, ", ", hor, ", ", box)
+		}
+		
+		function wipe() {
+			var clrText = document.getElementById('textTypes');
+			clrText.innerHTML = "";
+			
+			var clrStr = document.getElementById('stringTypes');
+			clrStr.innerHTML = "";
+			
+			var clrDrop = document.getElementById('dropdowns');
+			clrDrop.innerHTML = "";
+			
+			var clrRadio = document.getElementById('radioTypes');
+			clrRadio.innerHTML = "";
+			
+			var clrColor = document.getElementById('colorTypes');
+			clrColor.innerHTML = "";
+			
+			var clrDone = document.getElementById('done');
+			clrDone.innerHTML = "";
+			
+
+		}
+	</script>
+  
+  </body>
+</html>
+
